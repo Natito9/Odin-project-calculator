@@ -1,15 +1,4 @@
-//pseudo code
-
-//Create basic functions for (ADD;SUBSTRACT;MULTOPLY;DIVIDE),
-//test on console
-//2. Create 3 variables for each of the parts ( 3 + 5)
-//3. create function (oparate) that takes an operator and 2 numbers
-// then calls one of the functions on the numbers
-// 4. add HTML, button for numbers, and opertion and =, clear button
-// 5. connect the HTML with java, (STORE THE DISPLAY VALUE) in a variable
-
-
-// 6. make it work. display the result.
+//
 //7. IDK check ODIN
 
 let a = "";
@@ -42,15 +31,15 @@ function operate(a, operator, b){
     else if (operator === "-"){ 
         return subtract(a,b) 
     }
-    else if (operator === "*"){ 
+    else if (operator === "x"){ 
             return multiply(a,b) 
     }
-    else if (operator === "/"){ 
+    else if (operator === "/"){
+        if (b===0) {
+            return "Error";
+        }
             return divide(a,b) 
     }
-    else if (operator === "="){ 
-        return calculate() 
-}// add c to delete
 }
 
 
@@ -70,11 +59,11 @@ function appendNumber(number){
 
 //choose operato function stores the operator
 function chooseOperator(selectedOperator){
-    if(operator !==null  && b !== "") return;
+    if(operator !==null  && b !== ""){
     calculate();
-
+    }
     operator= selectedOperator;
-    display.textContent=""; //clear display
+   resetDisplay = true; //clear display
    
 }
 
@@ -108,7 +97,7 @@ document.querySelector('.buttons').addEventListener('click', function(event) {
         const buttonValue = event.target.textContent;
         if (!isNaN(buttonValue)) {
             appendNumber(buttonValue);
-        } else if (["+", "-", "*", "/"].includes(buttonValue)) {
+        } else if (["+", "-", "x", "/"].includes(buttonValue)) {
             chooseOperator(buttonValue);
         }
     }
