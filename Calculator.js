@@ -1,5 +1,3 @@
-//
-//7. IDK check ODIN
 
 let a = "";
 let b = "";
