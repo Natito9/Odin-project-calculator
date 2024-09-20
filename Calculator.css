@@ -1,0 +1,25 @@
+
+body{
+    margin:auto;
+}
+.container{
+    border-style: solid;
+    border-color: black;
+    width: 500px;
+    height: 550px;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+.display{
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+    height: 30px;
+    margin: 20px
+}
+.buttons{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+}
