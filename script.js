@@ -107,3 +107,4 @@ document.getElementById("result").addEventListener('click', calculate);
 // Event listener for "clear" button
 document.getElementById("clear").addEventListener('click', clearDisplay);
 
+

@@ -1,0 +1,186 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container for the Calculator */
+.container {
+    border: 2px solid #000000;
+    box-shadow: 6px 4px 0px 0px #25e387;
+    background-color: #55fdac;
+    height: 450px;
+   max-width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Display Styling */
+.display {
+    max-width: 100%;
+    width: 100%;
+    max-height: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    box-shadow: inset 2px 2px 4px #000000;
+    text-align: right;
+    background-color: #bcf5e2;
+    color: #333;
+    overflow: hidden;
+    
+}
+
+/* Button Container Styling */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    justify-content: center;
+  
+
+    
+}
+.buttonNumbersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.buttonsOperation{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}       
+.row3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.row4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Button Styling */
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: #55fdac;
+    border: 2px solid #30c372;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px #000000;
+}
+
+button:hover {
+    background-color: #2bff99;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #91f9b6;
+    box-shadow: none;
+}
+
+/* Special Button Styling for Operations */
+.buttonsOperation button {
+    background-color: #10d274;
+    color: rgb(0, 0, 0);
+   
+}
+
+.buttonsOperation button:hover {
+    background-color: #2bff99;
+  
+ 
+}
+
+.buttonsOperation button:active {
+    background-color: #91f9b6;
+}
+
+/* Special Styling for Equal Button */
+#result {
+    background-color: #81dd3f;
+    color: rgb(0, 0, 0);
+    grid-column: span 2;
+   
+}
+
+#result:hover {
+    background-color: #2bff99;
+  
+}
+
+#result:active {
+    background-color: #b9ffbc;
+}
+
+/* Clear Button Styling */
+#clear {
+    background-color: #f3845b;
+    color: rgb(0, 0, 0);
+    
+}
+
+#clear:hover {
+    background-color: #ff6554;
+}
+
+#clear:active {
+    background-color: #a93226;
+}
+
